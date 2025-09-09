@@ -1,4 +1,4 @@
-import { GuestRoute,Routes,Route,Link } from "react-router-dom";
+import { BrowserRouter,Routes,Route,Link } from "react-router-dom";
 
 
 
@@ -20,7 +20,7 @@ function Contact(){
 function ReactRouter() {
 
     return(
-        <GuestRoute>
+        <BrowserRouter>
             <nav>
             <Link to="/">Home</Link>
             <Link to="/About">About</Link>
@@ -31,7 +31,7 @@ function ReactRouter() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
-        </GuestRoute>
+        </BrowserRouter>
 
         
     );
